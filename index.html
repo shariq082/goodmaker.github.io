@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Good Maker Nidhi Limited</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-primary bg-primary">
+        <div class="container">
+        <a class="navbar-brand text-white" href="#">Good Maker Nidhi Limited</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fa fa-bars" style="color:white;"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="#">Contact</a>
+              </li>
+          </ul>
+          
+        </div>
+    </div>
+      </nav>
+      <!-----------------------header------------------>
+     
+        <section class="hero-leadbox">
+                <div class="container">
+                    <div class="contact text-center text-white pt-5"><h3>Call Now:- 9999999999</h3></div>
+                    <div class="row py-5">
+                            <div class="col-md-6 col-sm-12 text-center">
+                                  <form class="online-form-width" name="myForm" action="thanks.php" method="post" 
+                                    onsubmit="return validateForm()">
+                                        <h4 class="text-center text-primary"><strong>Loan Enquiry</strong></h4>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="name1" id="name1" placeholder="Name" required >
+                                        </div>
+                                        <div class="form-group">
+                                  
+                                            
+                                                <input type="tel" class="form-control" placeholder="Mobile No."minlength="10" maxlength="10" id="mobile" name="mobile" title="10 digit mobile number" required>
+                                            
+                                            
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control" name="loantype" id="loantype" required >
+                                                <option value="-1">Select Loan Type</option>
+                                                <option value="Home Loan">HOME LOAN</option>
+                                                <option value="LAP">CC LIMIT</option>
+                                                <option value="Business Loan">PERSONAL LOAN</option>
+                                                <option value="Business Loan">BUSINESS LOAN</option>
+                                                <option value="LAP Loan ">LAP Loan </option>
+                                                <option value="PROJECT LOAN   ">PROJECT LOAN </option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control" name="amount" id="amount" required>
+                                                <option value="-1">Select Loan Amount</option>
+                                                <option value="1 Lac">1 Lac</option>
+                                                <option value="2 Lac">2 Lac</option>
+                                                <option value="3 Lac">3 Lac</option>
+                                                <option value="4 Lac">4 Lac</option>
+                                                <option value="5 Lac">5 Lac</option>
+                                                <option value="6 Lac">6 Lac</option>
+                                                <option value="7 Lac">7 Lac</option>
+                                                <option value="8 Lac">8 Lac</option>
+                                                <option value="9 Lac">9 Lac</option>
+                                                <option value="10 Lac">10 Lac</option>
+                                                <option value="11 Lac">11 Lac</option>
+                                                <option value="12 Lac">12 Lac</option>
+                                                <option value="13 Lac">13 Lac</option>
+                                                <option value="14 Lac">14 Lac</option>
+                                                <option value="15 Lac">15 Lac</option>
+                                                <option value="16 Lac">16 Lac</option>
+                                                <option value="17 Lac">17 Lac</option>
+                                                <option value="18 Lac">18 Lac</option>
+                                                <option value="19 Lac">19 Lac</option>
+                                                <option value="20 Lac">20 Lac</option>
+                                                <option value="30 Lac">30 Lac</option>
+                                                <option value="40 Lac">40 Lac</option>
+                                                <option value="50 Lac">50 Lac</option>
+                                                <option value="60 Lac">60 Lac</option>
+                                                <option value="70 Lac">70 Lac</option>
+                                                <option value="80 Lac">80 Lac</option>
+                                                <option value="90 Lac">90 Lac</option>
+                                                <option value="1 Crore">1 Crore</option>
+    
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control" name="state" id="state" onchange="showcity(this.value)" required>
+                                                <option value="">Select State</option>
+                                                                                            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                                                                           <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                                                                           <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                                                                           <option value="Assam">Assam</option>
+                                                                                           <option value="Bihar">Bihar</option>
+                                                                                           <option value="Chandigarh">Chandigarh</option>
+                                                                                           <option value="Chhattisgarh">Chhattisgarh</option>
+                                                                                           <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                                                                                           <option value="Daman and Diu">Daman and Diu</option>
+                                                                                           <option value="Goa">Goa</option>
+                                                                                           <option value="Gujarat">Gujarat</option>
+                                                                                           <option value="Haryana">Haryana</option>
+                                                                                           <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                                                                           <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                                                                           <option value="Jharkhand">Jharkhand</option>
+                                                                                           <option value="Karnataka">Karnataka</option>
+                                                                                           <option value="Kerala">Kerala</option>
+                                                                                           <option value="Lakshadweep">Lakshadweep</option>
+                                                                                           <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                                                                           <option value="Maharashtra">Maharashtra</option>
+                                                                                           <option value="Manipur">Manipur</option>
+                                                                                           <option value="Meghalaya">Meghalaya</option>
+                                                                                           <option value="Mizoram">Mizoram</option>
+                                                                                           <option value="Nagaland">Nagaland</option>
+                                                                                           <option value="New Delhi">New Delhi</option>
+                                                                                           <option value="Odisha">Odisha</option>
+                                                                                           <option value="Puducherry (Pondicherry)">Puducherry (Pondicherry)</option>
+                                                                                           <option value="Punjab">Punjab</option>
+                                                                                           <option value="Rajasthan">Rajasthan</option>
+                                                                                           <option value="Sikkim">Sikkim</option>
+                                                                                           <option value="Tamil Nadu">Tamil Nadu</option>
+                                                                                           <option value="Telangana">Telangana</option>
+                                                                                           <option value="Tripura">Tripura</option>
+                                                                                           <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                                                                           <option value="Uttarakhand">Uttarakhand</option>
+                                                                                           <option value="West Bengal">West Bengal</option>
+                                                                                       </select>
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <select class="form-control" name="city" id="cityid" required>
+                                                <option value="Mumbai">Mumbai</option>
+                                                <option value="Bihar">Bihar</option>
+                                                <option value="Bangalore">Bangalore</option>
+                                                <option value="Chennai">Chennai</option>
+                                                <option value="Delhi">Delhi</option>                             
+                                                <option value="Hyderabad">Hyderabad</option>
+                                                <option value="Kolkata">Kolkata</option>
+                                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                                <option value="Utter Pradesh">Utter Pradesh</option>
+                                                <option value="other">Other</option>
+                                            </select>
+    
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" name="submit" class="btn btn-shadow btn-primary btn-block">SUBMIT</button>
+                                        </div>
+
+                                       
+                                    </form>
+     
+                                    <!-- /End Booking Form -->
+                              
+                             </div>
+                  
+    <div class="col-md-6 col-sm-12">
+    
+                <ul class="bottom-link list-unstyled">
+                    <li><img src="images/home-loan-icon.png" class="icon-l img-seze"> Home Loan</li>
+                    <li><img src="images/Home-Loan-Eligibility.png" class="icon-l img-seze"> BUSINESS LOAN</li>
+                    <li><img src="images/proloan.png" class="icon-l img-seze"> PROJECT LOAN</li>
+                    <li><img src="images/19538-200.png" class="icon-l"> PERSONAL LOAN</li>
+                    <li><img src="images/icon.png" class="icon-l"> LAP
+                    </li>
+                    <li><img src="images/itrloan.png" class="icon-l"> CC LIMIT </li>
+                    <li><img src="images/home-loan-icon.png" class="icon-l"> PLOT LOAN</li>
+                    <li><img src="images/home-loan-icon.png" class="icon-l"> LAND LOAN</li>
+                    <li><img src="images/hoppital.png" class="icon-l"> HOSPITAL PROJECT LOAN</li>
+                </ul>
+            </div>
+
+       
+
+</div>
+</div>
+<!-- /End Container -->
+</section>
+
+<div class="section bg-light">
+  
+        <div class="row">
+            <div class="col-md-6 col-sm-12 p-0">
+              <div class="imgage ">
+                  <img src="images/home-loan.jpg" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 p-0">
+                <div class="pull-left">
+                    <h3>Home Loan</h3>
+                <p>Documents Required for Applicant 4 Photo’s Property Documents Business Proof 6 Month Bank Statement I.D Proof Address Proof Documents No Guarantor Required</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 p-0">
+                 <div class="pull-right text-right">
+                    <h3>Business Loan</h3>
+                    <p>Documents Required for Applicant 4 Photo’s Last 3 Year Itr Last 3 Year Balance Sheet Property Documents Business Proof 6 Month Bank Statement I.D Proof Address Proof Documents No Guarantor Required</p>
+                 </div>
+            </div>
+            <div class="col-md-6 col-sm-12 p-0">
+                <div class="imgage">
+                    <img src="images/busi-loan.jpg" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 p-0">
+                <div class="imgage">
+                    <img src="images/pro1.jpg" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 p-0">
+                <div class="pull-left">
+                    <h3>Project Loan</h3>
+                <p>Documents Required For Applicant 4 Photo’s Last 3 Year Itr Last 3 Year Balance Sheet Project Report According To CA Property Documents Business Proof 6 Month Bank Statement I.D Proof Address Proof Documents</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 p-0">
+                <div class="pull-right text-right">
+                    <h3>Personal Loan</h3>
+                <p>Documents Required for Applicant 4 Photo’s Last 3 months Pay Slip 2 Years Form 16 6 Month Bank Statement I.D Proof Address Proof Documents No Guarantor Required</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 p-0">
+                <div class="imgage">
+                    <img src="images/per-loan.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>  
+        <a href="tel:07353755375"><i class="fa fa-phone"></i></a> 
+</div>
+<section class="footer bg-primary py-5 text-white">
+   <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="text-left">
+                <h3>CONTACT US</h3>
+                <h5 class="py-3"><span class="fa fa-envelope"></span>&nbsp; goodmaker128@gmail.com</h5>
+                <h5><span class="fa fa-map-marker"></span>&nbsp;&nbsp; F- 249, street no. 13,&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;khajoori khas,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;main wazirabad road,<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delhi 110094</h5>
+            </div>
+           
+        </div>
+        <div class="col-md-6">
+            <div class="text-left">
+                <h3>LOCATION MAP</h3>
+                <div class="map py-3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13996.97705876392!2d77.25203772069136!3d28.712245268179988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfc3cea6ed011%3A0x44cd4ca33eccf290!2z4KqW4Kq-4Kqd4KuC4Kqw4KuAIOCqluCqvuCquCwg4Kqo4Kq14KuAIOCqpuCqv-CqsuCrjeCqueCrgCwg4Kqm4Kq_4Kqy4KuN4Kqy4KuAIDExMDA5NA!5e0!3m2!1sgu!2sin!4v1618757288337!5m2!1sgu!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</section>
+</body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
